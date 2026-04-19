@@ -1,0 +1,13 @@
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.coverage.run]
+source = ["src/pyscripts"]
+
+[tool.coverage.report]
+fail_under = 80
+show_missing = true
+
+[tool.pylint.main]
+disable = ["missing-module-docstring", "missing-function-docstring"]
