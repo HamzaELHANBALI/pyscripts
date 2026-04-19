@@ -45,6 +45,10 @@ Generer la page HTML :
 python scripts/generate_index.py
 ```
 
+Sur GitHub, le workflow `CI` lance tests, style et qualite a chaque push.
+Le workflow `GitHub Pages` genere puis publie `dist/index.html` apres un push
+sur `main`.
+
 ## Idees de contributions
 
 - ajouter une fonction dans `calculator.py` ;
