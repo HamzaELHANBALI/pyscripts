@@ -9,6 +9,12 @@ def subtract(left: float, right: float) -> float:
     return left - right
 
 
+def modulo(left: float, right: float) -> float:
+    if right == 0:
+        raise ValueError("modulo by zero is not allowed")
+    return left % right
+
+
 def multiply(left: float, right: float) -> float:
     return left * right
 
